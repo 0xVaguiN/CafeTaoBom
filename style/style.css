@@ -96,3 +96,45 @@ a:hover {
     color: #917e72;
     box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.5);
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .imagens {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .imagem {
+    margin-bottom: 30px;
+  }
+
+  .imagem-menu {
+    width: 90%;   /* ocupa quase toda a tela */
+    height: 80.5%; /* mantém a proporção */
+    max-width: 400px;
+  }
+
+  .cabecalho {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .titulo-2 {
+    padding: 10px 0 0 0;
+  }
+
+  a:hover {
+    transform: translate(-10px, -50px);
+    color: #917e72;
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+  footer {
+    position: relative; /* evita bug de sobreposição em celular */
+    height: auto;
+    padding: 15px;
+    text-align: center;
+  }
+}

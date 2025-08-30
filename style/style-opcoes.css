@@ -36,6 +36,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: start;
+    margin-right: 80px;
     z-index: 2;
 }
 
@@ -127,4 +128,91 @@ p.preco {
     font-size: 35px;
     font-weight: bold;
     color: rgb(71, 42, 33);
+}
+
+@media (max-width: 768px) {
+  .imagens {
+    flex-direction: column;
+    align-items: center;
+    padding: -5%;
+    margin-top: 1%;
+  }
+
+  .imagem {
+    margin-bottom: -5%;
+  }
+
+  .imagem-menu {
+    width: 85%;   /* ocupa quase toda a tela */
+    height: auto; /* mantém a proporção */
+    max-width: 400px;
+  }
+
+  .cabecalho {
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    align-items: center;
+  }
+
+  .voltar {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-right: 80px;
+    z-index: 2;
+}
+
+a {
+    padding: 40px;
+    margin-left: 0;
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+    border-radius: 2rem;
+    transition: all 0.4s ease-in-out;
+}
+
+  .titulo-2 {
+    padding: 0;
+  }
+    
+    .conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    margin-top: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+    h3.preco {
+    margin-top: 40px;
+    font-size: 250%;
+    font-weight: bold;
+    color: rgb(71, 42, 33);
+}
+
+p.preco {
+    font-size: 150%;
+    font-weight: bold;
+    color: rgb(71, 42, 33);
+}
+    
+  .texto {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 110%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+  footer {
+    position: relative; /* evita bug de sobreposição em celular */
+    height: 100%;
+    margin-top: 15%;
+    padding: 15px;
+    text-align: center;
+  }
 }
