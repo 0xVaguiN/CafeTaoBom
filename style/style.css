@@ -136,7 +136,9 @@ a:hover {
   footer {
     position: relative; /* evita bug de sobreposição em celular */
     height: auto;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: xx-small;
     text-align: center;
   }
 }
