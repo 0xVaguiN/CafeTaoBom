@@ -117,8 +117,10 @@ a:hover {
   }
 
   .cabecalho {
+    display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+      font-size: x-large;
   }
 
   .titulo-2 {
@@ -138,3 +140,4 @@ a:hover {
     text-align: center;
   }
 }
+
